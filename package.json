@@ -1,0 +1,16 @@
+{
+  "name": "kte-ai-facebook-bot",
+  "version": "1.0.0",
+  "description": "Facebook Messenger webhook connecting KTE-AI Dify chatbot to Fanpage Messenger",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "express": "^4.21.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
