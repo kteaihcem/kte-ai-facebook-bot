@@ -29,9 +29,12 @@ app.get("/webhook", (req, res) => {
 });
 
 app.post("/webhook", async (req, res) => {
+  console.log("POST /webhook received:", JSON.stringify(req.body));
+
   const body = req.body;
 
   if (body.object !== "page") {
+    console.log("Ignored webhook object:", body.object);
     return res.sendStatus(404);
   }
 
